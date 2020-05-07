@@ -16,9 +16,9 @@ Si requiere más ayuda por favor contacte a nuestro equipo de soporte @ [Discord
 
 ## Requerimientos
 1) **Instalar el cliente OpenVPN**  
-2) **Descargar la configuración de Veles OpenVPN**  
+2) **Descargar la configuración de OpenVPN de Veles**  
 
-## Conteido
+## Contenido
 * **Sección A**: Descargar e instalar OpenVPN
 * **Sección B**: Configurar OpenVPN
 * **Sección C**: Conectarse a la dVPN de Veles
