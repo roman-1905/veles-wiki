@@ -1,98 +1,99 @@
-Name:               Veles Android Shadowsocks Guide
+Name:               Guía de Shadowsocks en Android para Veles
 Image:              images/download/linux-wallet.png
-GuideType:          User's Guide
+GuideType:          Guía de Usuario
 OS:                 Android
 VelesdApp:          dVPN
 Protocol:           Shadowsocks
-Requirements:       Shadowsocks client
-Difficulty:         Easy
-EstimatedTime:      5 minutes
+Requirements:       cliente Shadowsocks
+Difficulty:         Fácil
+EstimatedTime:      5 minutos
 
-# Android Shadowsocks Guide 
-This will guide you through the process of installing and using Shadowsocks on the Android platform.  
+# Guía de Shadowsocks para Android
+Esto te guiará a través del proceso de instalar y utilizar Shadowsock en la plataforma Android.  
 
-If you require further assistance contact the support team @ [Discord](https://discord.gg/P528fGg)
+Si requiere más ayuda por favor contacte a nuestro equipo de soporte @ [Discord](https://discord.gg/P528fGg) 
 
-## Requirements
-1) **Install Shadowsocks Client**  
-2) **Download Veles Shadowsocks config**  
+## Requirimientos
+1) **Instalar el cliente de Shadowsocks**  
+2) **Descargar la configuración de OpenVPN para Veles**  
 
-## Contents
-* **Section A**: Download and Install Shadowsocks
-* **Section B**: Configure Shadowsocks
-* **Section C**: Connect to Veles d-VPN with Shadowsocks
-* **Section D**: Test Shadowsocks Connection
+## Contenido
+* **Sección A**: Descargar e instalar Shadowsocks
+* **Sección B**: Configurar Shadowsocks
+* **Sección C**: Conectarse a la dVPN de Veles con Shadowsocks
+* **Sección D**: Testear la conexión Shadowsocks 
 ***
 
-### Section A: Download and Install Shadowsocks
+### Sección A: Descargar e instalar Shadowsocks
 
-***Step 1***  
+***Paso 1***
 
-* Open the **Google Play Store**. Search for and install **Shadowsocks Client**.
+* Abrir **Google Play Store**. Buscar e instalar **Shadowsocks Connect**, el cliente oficial de Shadowsocks para Android.
 
 ***
 
-### Section B: Configure Shadowsocks 
+### Sección B: Configurar Shadowsocks
 
-***Step 1***  
+***Paso 1***  
 
-* After installing Shadowsocks Client, **download [Veles Shadowsocks config file](https://explorer.veles.network/dapi/getShadowsocksConfig)**.  
+* Luego de instalar el cliente de Shadowsocks, **descarga el [archivo de configuración de Shadowsocks para Veles](https://explorer.veles.network/dapi/getShadowsocksConfig)**.  
 [https://explorer.veles.network/dapi/getShadowsocksConfig](https://explorer.veles.network/dapi/getShadowsocksConfig)
 
 ***
 
-***Step 2***  
+***Paso 2***  
 
-* **Start the Shadowsocks Client app** and tap the menu to **Import the profile**.
-
-***
-
-***Step 3***  
-
-* Then fill **"Hostname"** with **IP of Masternode** located in Shadowsocks Config.
+* Ejecuta el **cliente de Shadowsocks** y ve al menú **Importar perfil**.
 
 ***
 
-***Step 4***  
+***Paso 3***  
 
-* **"Remote Port"** replace with Veles Remote Port **21344**
-
-***
-
-***Step 5***  
-
-* Change **"Encryption Method"** to **aes-256-cfb**
+* Luego, completa el **"Hostname" (nombre de host)** con la **IP del Masternode** en la configuración de Shadowsocks.
 
 ***
 
-***Step 6***  
+***Paso 4***  
 
-* Fullfill the **"Password"** with password located in Shadowsocks Config.  
-
-!!! caution "Experimental Warning"
-    In testing phase is default password - **`password`**  
+* **"Remote Port" (Puerto Remoto)** reemplazar con el Puerto Remoto de Veles **21344**
 
 ***
 
-### Section C: Connect to Veles d-VPN with Shadowsocks 
+***Paso 5***  
 
-***Step 1***  
+* Cambiar **"Encryption Method" (Método de Encriptación)** a **aes-256-cfb**
 
-* **To connect**, simply tap the **Connect** button. You’ll be asked if you trust the Shadowsocks Client application. **Choose OK** to initiate the connection.  
+***
+
+***Paso 6***  
+
+* Completar el **"Password"** con el password en la configuración de Shadowsocks.  
+
+!!! cuidado "Advertencia"
+    En la fase de testeo el password por defecto es - **`password`**  
+
+***
+
+### Sección C: Conectarse a la dVPN de Veles con Shadowsocks
+
+***Paso 1***  
+
+* Para conectarse, simplemente clickea el botón **Conectar**. Se solicitará que confirme que confía en la aplicación Shadowsocks. **Elige OK** para iniciar la conexión.  
 
 !!! tip "User Tip"
-    **To disconnect** from the Shadowsocks client just press **Disconnect**.  
+ 	Para **desconectarse** del cliente Shadowsocks, simplemente clickea **Desconectar**.  
 
 ***
 
-### Section D: Test Shadowsocks Connection
+### Sección D: Testear la conexión Shadowsocks 
 
-***Step 1***  
+***Paso 1***  
 
-* Once everything is installed, a simple check confirms everything is working properly. Without having a Shadowsocks connection enabled, open a browser and go to [DNSLeakTest](https://www.dnsleaktest.com/).
-The site will return the IP address assigned by your internet service provider and as you appear to the rest of the world. To check your DNS settings through the same website, click on Extended Test and it will tell you which DNS servers you are using.
-Now connect to your Shadowsocks client and refresh the browser. The completely different IP address of your Shadowsocks  server should now appear. That is now how you appear to the world. Again, [DNSLeakTest's](https://www.dnsleaktest.com/) **Extended Test** will check your DNS settings and confirm you are now using the DNS resolvers pushed by Veles dVPN.
+* Una vez que todo está instalado, es sencillo confirmar que todo está funcionando apropiadamente. Sin tener la conexión Shadowsocks activada, abra su navegador y vaya a [DNSLeakTest](https://www.dnsleaktest.com/).
+El sitio le retornará la dirección IP asignada a usted por su proveedor de Internet, de la forma que el mundo lo ve. Para chequear su configuración de DNS a través del mismo sitio, clickee en Test Extendido y le informará que servidores DNS está utilizando.
+Ahora, conecte su cliente Shadowsocks y refresque el navegador. La dirección IP totalmente nueva de su servidor VPN debería aparecer. Esto es como se muestra al mundo ahora. Nuevamente, el **Test Extendido** de  [DNSLeakTest](https://www.dnsleaktest.com/) chequeará su configuración de servidores DNS y le confirmará que está utilizando los resolvedores DNS de la dVPN Veles.
 
 ***
 
-If you do, congratulations! You have now setup a Veles d-VPN . If you do not, please contact support on [Discord](https://discord.gg/P528fGg) and they will assist you.  
+Si está todo correcto. felicitaciones! Has configurado la dVPN de Veles de manera exitosa. Si no es así, por favor contacta a soporte en [Discord](https://discord.gg/P528fGg) y ellos te asistirán.  
+
