@@ -1,66 +1,65 @@
-Name:                   Veles (Cryptocurrency)
+Name:                   Veles (Cryptomoneda)
 Image:                  /images/logo/veles256.png
 Ticker:                 VLS
 ProgrammingLanguage:    C++
-InitialRelease:         November 2018
+InitialRelease:         Noviembre 2018
 OrgStructure:           Decentralized
-OpenSource:             Yes
+OpenSource:             Si
 License:                MIT
 ConsensusMechanism:     Proof of Work
-DevelopmentStatus:      Alpha (active)
+DevelopmentStatus:      Alpha (activo)
 Bitcointalk:            [\[ANN\] ▼ VELES ... ](https://bitcointalk.org/index.php?topic=5064523)
-Website:                https://www.veles.network
-Whitepaper:             [WP - First Release](https://veles.network/Whitepaper.wiki.en.html)
+Website:                https://www.veles.network/index.es.html
+Whitepaper:             [WP - First Release](https://veles.network/Whitepaper.wiki.es.html)
 
-# Coin Specifications
+# Especificaciones de la Moneda
 
-General Specifications  | :
+Especificaciones Generales  | :
 ----------------------- | -------------------------------------------
-Mining Algorithms       | Lyra2z, X11, X16R, Sha256d, Scrypt, Nist5
-Maximum Supply          | 2 500 000 VLS
-Circulating Supply      | {: data-entity-id="market.price" data-attribute="total_supply" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
-Block Time              | 2 minutes 
-Coin-swap Premine       | 50 000 VLS
-Blockchain Height       | {: data-entity-id="chain.tip" data-format="number" data-attribute="height" data-unit="blocks" .ws }
+Algoritmos de minado    | Lyra2z, X11, X16R, Sha256d, Scrypt, Nist5
+Unidades Máximas        | 2 500 000 VLS
+Unidades en Circulación | {: data-entity-id="market.price" data-attribute="total_supply" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
+Tiempo de Bloque        | 2 minutos 
+Preminado (swap)        | 50 000 VLS
+Bloques actualmente     | {: data-entity-id="chain.tip" data-format="number" data-attribute="height" data-unit="blocks" .ws }
 
-Masternode Specifications   | :
+Especificaciones Masternode | :
 --------------------------- | ---------------------------------------
-Masternode Collateral       | 500 VLS
-Number of Masternodes       | {: data-entity-id="masternodes" data-attribute="count" .ws }
-Enabled dApps               | dVPN, dDNS (recursive)
+Colateral de Masternode     | 500 VLS
+Número de Masternodes       | {: data-entity-id="masternodes" data-attribute="count" .ws }
+dApps en ejecución          | dVPN, dDNS (recursive)
 
-Block Reward Specifications | ⚒
---------------------------- | ---------------------------------------
-Maximum Block Reward        | {: data-entity-id="chain.halving.status" data-attribute="max_block_reward" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
-Minimum Block Reward        | 0.01 VLS
-Average Block Reward        | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_average" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
-PoW Miner Reward %          | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_pow_percent" data-format="number" data-fixed-decimals="2" data-unit="%" .ws }
-Masternode Reward %         | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_mn_percent" data-format="number" data-fixed-decimals="2" data-unit="%" .ws }
-Dev Team Reward %           | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_dev_percent" data-format="number" data-fixed-decimals="2" data-unit="%" .ws }
-Dev Team Address            | VKtig9w7wfx6Ep9B4NnbwxLj1bkY2kHXBj
+Especificaciones de recompensa de Bloques | ⚒
+----------------------------------------- | ---------------------------------------
+Recompensa Máxima por Bloque              | {: data-entity-id="chain.halving.status" data-attribute="max_block_reward" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
+Recompensa Mínima por Bloque              | 0.01 VLS
+Recompensa Promedio por Bloque            | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_average" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
+Recompensa por minado PoW %               | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_pow_percent" data-format="number" data-fixed-decimals="2" data-unit="%" .ws }
+Recompensa para Masternode %              | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_mn_percent" data-format="number" data-fixed-decimals="2" data-unit="%" .ws }
+Recompensa para Dev Team %                | {: data-entity-id="chain.stats.mining" data-attribute="block_reward_dev_percent" data-format="number" data-fixed-decimals="2" data-unit="%" .ws }
+Billetera Dev Team                        | VKtig9w7wfx6Ep9B4NnbwxLj1bkY2kHXBj
 
-Block Reward Halving           | ⚒
------------------------------- | ------------------------------------
-Blocks to next halving check:  | {: .chain-pow-blocks-to-next-epoch .ws }
-Epoch start block              | {: data-entity-id="chain.halving.status" data-attribute="start_block" .ws }
-Epoch end block                | {: data-entity-id="chain.halving.status" data-attribute="end_block" .ws }
-Supply emitted since halving   | {: data-entity-id="chain.halving.status" data-attribute="supply_since_halving" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
-Supply emission target         | 160 000 VLS
-Supply target reached by       | {: data-entity-id="chain.halving.status" data-attribute="supply_target_reached" .ws }
-Min % required from target     | 80%
-Current halving epoch          | {: data-entity-id="chain.halving.status" data-attribute="epoch_name" .ws }
+Halving de recompensa por Bloque  | ⚒
+--------------------------------- | ------------------------------------
+Bloques hasta siguiente Halving:  | {: .chain-pow-blocks-to-next-epoch .ws }
+Bloque de Inicio de Epoch         | {: data-entity-id="chain.halving.status" data-attribute="start_block" .ws }
+Bloque de fin de Epoch            | {: data-entity-id="chain.halving.status" data-attribute="end_block" .ws }
+Unidades emitidas desde Halving   | {: data-entity-id="chain.halving.status" data-attribute="supply_since_halving" data-format="number" data-fixed-decimals="2" data-unit="VLS" .ws }
+Objetivo de Emisión               | 160 000 VLS
+Porcentaje alcanzado actual       | {: data-entity-id="chain.halving.status" data-attribute="supply_target_reached" .ws }
+Porcentaje mínimo requerido       | 80%
+Epoch actual                      | {: data-entity-id="chain.halving.status" data-attribute="epoch_name" .ws }
 
-For more information and full list of previous halving epochs see [Halving Epochs table on the Mining Stats](https://explorer.veles.network/miningstats#halving-epoch-table) page on the Explorer. You can also check `gethalvingstatus` command in your local wallet. 
+
+Para más información y una lista completa de los Halvings anteriores vea la página [Halving Epochs table on the Mining Stats](https://explorer.veles.network/miningstats#halving-epoch-table) en el Explorador. También puede utilizar el comando `gethalvingstatus` en su billetera local. 
 
 
 !!! note ""
-    Items shown in green are dynamically changing by the network's consensus
-    and display current values right now.
+    Items  mostrados en verde se cambian dinámicamente por el mecanismo de consenso de la red y muestran valores actualizados.
     {: .ws}
 
-    If you see some values missing, it's probably because you're not viewing
-    this page using official wiki web-app, then plese visit
+    Si algunos valores no se muestran es probable que sea debido a que no está viendo esta página utilizando la web-app oficial de la wiki.
+    De ser así por favor visita
     [current page on the Veles Core wiki](http://veles.network/Coin-Specifications.wiki.en.html).
-    If you do then your browser is facing issues with the connection to 
-    the backend server.
+    Si ya es así entonces tu navegador está teniendo problemas para conectarse con el servidor.
     {: .websocket-offline}
